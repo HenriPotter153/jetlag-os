@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JetLag: The Game | H+S Osnabrück</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  </head>
+  <body>
+    <div id="header">
+      <img src="logo2.png" alt="JetLag: The Game Logo">
+      <h1>JetLag: The Game | H+S Osnabrück</h1>
+    </div>
+    <div id="form" class="standard">
+      <form>
+        <input type="text" placeholder="Name...">
+        <input type="text" id="mehrereDaten" name="daten" placeholder="Daten auswählen...">
+        <input type="submit">
+      </form>
+    </div>
+    <div id="karte" class="standard">
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1_ZA4u8qJZtbdQ6x4LXxdXUBofW_Pz3E&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+    </div>
+    <div id="leaderboard" class="standard">
+    <div id="ileaderboard">
+        <div id="eins">
+        <h1>1. Leif: 2:09h (Zeit: 1:51 ;Time Boni: 4 + 8 + 4 + 2; 30.3.2026)</h1>
+        </div>
+        <div id="zwei">
+        <h2>2. Julian: 0:52:30h (30.3.2026)</h2>
+        </div>
+        <div id="drei">
+        <h2>3. /</h2>
+        </div>
+        <div id="rest">
+        <p>4. /<br></br>Nächste Hider (übrig bei letzter Auslosung): Henri</p>
+        </div>
+      </div>
+    </div>
+    <div id="info">
+      <p>Einstellungen:<br>Versteckzeit: 30 Minuten<br>Radius: 300m<br><br>Infos:<br>Für Alle:<br>- Am Anfang Reihenfolge auslosen<br>- Nur festgelegte Busse auf festgelegten Routen zum Bewegen erlaubt (und Laufen): https://www.google.com/maps/d/u/0/viewer?mid=1_ZA4u8qJZtbdQ6x4LXxdXUBofW_Pz3E&ll=52.2716706243354%2C8.146952928916344&z=13<br>- Standort über Google Maps senden<br>- Für gleiche Infos (bei manchen Karten/Fragen wichtig) ist nur Google Maps erlaubt!<br>- Infos zu Fragenkategorien unten<br><br>Sucher:<br>- Eine Frage auf einmal<br>- Beim erneuten Stellen einer Frage verdoppeln sich die Belohnungen des Versteckers (…, verdreifacht, vervierfacht,…)<br>- Street View verboten!<br><br>Verstecker:<br>- Nach Ablauf der Versteckzeit sofort aussteigen/in Radius der Haltestelle bleiben<br>- 5 Minuten Zeit zum Antworten (10 Minuten bei Fotos)<br>- Karten ziehen nach beantworten<br>- Maximale Handgröße: 6<br>- Bei neuen Karten während vollem Deck: Alte Karten/Neue Karte-/n spielen oder zurück auf den Stapel<br>- Wenn Sucher in Radius: Nicht mehr Bewegen! (Bis sie den Radius wieder verlassen haben) => Bei nicht beantwortbaren Foto-Fragen als Antwort "Ich kann diese Frage nicht beantworten" => Weiterhin Karten als Belohnung ziehen<br>- Versteck muss immer öffentlich zugänglich sein und darf maximal 10 Meter von einer auf Google Maps markierten Straße/Weg entfernt sein<br><br>Fragenkategorien:<br>- Matching: <br>  Frage: "Ist dein nähestes … dasselbe … wie bei uns?"<br>  Antwort: Ja/Nein<br>  Kosten: Zieh 3 und behalte 1<br>  Fragen: Zugstrecke (Auf Google: "ICE Strecken" + "Weitere DB Strecken"; Es Zählen: West-Ost/Atter-Lüstringen; Nord-Süd/Belm-Hasbergen/Sutthausen); Haltestellennamenlänge; Straße/Weg; Bezirk; Stadtteil; Berg; Park; Freizeitpark (Es sind 2 auf der Karte); Golf (Es gibt 3); Museum; Kino; Krankenhaus; Bücherei<br><br>- Measuring:<br>  Frage: "Im Vergleich zu uns, bist du näher oder weiter weg von …?"<br>  Antwort: Näher, Weiter<br>  Kosten: Zieh 3 und behalte 1<br>  Fragen: Flughafen (Es gibt 1); Hochgeschwindigkeitszugstrecke (nur die ICE Strecken); Bahnhof; Internationale Grenze (Niederlande); Bundeslandgrenze (NRW); Landkreisgrenze (Landkreis OS/Landkreis Steinfurt); Meeresspiegel; "Stück" Wasser (Auf Karte als Wasser markiert); Küste (Nordsee); Berg; Park; Freizeitpark; Zoo (Zoo Osnabrück); Aquarium (Zoo Osnabrück); Golf (Es gibt 3); Museum; Kino; Krankenhaus; Bücherei; Konsulat (Münster)<br><br>- Radar:<br>  Frage: "Bist du innerhalb von … von uns?"<br>  Antwort: Ja/Nein<br>  Kosten: Zieh 2 und behalte 1<br>  Fragen: 500m; 1km; 2km; 5km; 10km; 15km<br><br>- Thermometer:<br>  Frage: Nachdem wir uns … bewegt haben, sind wir wärmer oder kälter?"<br>  Antwort: Wärmer, Kälter<br>  Kosten: Zieh 2 und behalte 1<br>  Fragen: 1km, 5km<br><br>- Foto Fragen:<br>  Frage: "Sende uns ein Foto von …"<br>  Antwort: Foto/"Ich kann diese Frage nicht beantworten" (Falls Sucher in Radius sind und Foto von dort nicht möglich ist)<br>  Kosten: Zieh eine Karte und behalte diese<br>  Fragen: Höchstes sichtbares Gebäude von Haltestelle (Dach und 2 Seiten, Struktur mind. 2/3 des Bildes); Breiteste Straße (Beide Seiten der Straße); Baum (ganzer Baum); Größtes Gebäude nach aktueller Sicht (Dach und 2 Seiten, Struktur mind. 2/3 des Bildes); Selfie (selbsterklärend); Himmel<br><br>- Tentakel:<br>  Frage: "Innerhalb von 2km Metern von uns, welche/-s ... ist das näheste von dir aus? (Verstecker muss 2km entfernt sein, sonst nicht antworten oder schreiben, dass es nicht geht)"<br>  Antwort: Name von Ort<br>  Kosten: Zieh 4 und behalte 2<br>  Fragen: Museen; Büchereien; Kinos; Krankenhäuser</p>
+    </div>
+    <div id="footer">
+      <h3>JetLag: The Game | H+S Osnabrück</h3>
+    </div>
+  </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+  flatpickr("#mehrereDaten", {
+    mode: "multiple",   // mehrere Daten erlauben
+    dateFormat: "Y-m-d",
+    maxDate: "2026-12-31"
+  });
+</script>

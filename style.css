@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #1D2837;
+  min-height: 100vh;
+  margin: 0;
+  justify-content: space-between;
+}
+#header > h1 {
+  margin-left: 10px;
+  margin-right: auto;
+}
+#header > img {
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 50px;
+}
+body h1, h3 {
+  color: white;
+}
+#header {
+  display: flex;
+  width: 100%;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+  margin-bottom: 20px;
+  background: black;
+}
+.standard {
+  display: flex;
+  width: 100%;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  color: white;
+}
+#form > form {
+  margin: 0 auto;
+  text-align: center;
+  flex: 1;
+}
+#form > form > input {
+  margin: 10px;
+  margin-top: 0px;
+}
+#footer {
+  display: flex;
+  width: 100%;
+  margin-top: auto;
+  border-top-color: white;
+  border-top-style: solid;
+  border-top-width: 10px;
+  background: black;
+  justify-content: center;
+}
+#header, #form, #footer {
+  width: 100%;
+}
+#info {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#karte {
+  margin: auto;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+#karte > * {
+  height: 40vw;
+  width: 80vw;
+}
+#info {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+#leaderboard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+#ileaderboard {
+  margin: auto;
+}
+#eins h1 {
+  color: goldenrod;
+}
+#zwei h2 {
+  color: silver;
+}
+#drei h2 {
+  color: brown;
+}
+#rest {
+  color: white;
+}
