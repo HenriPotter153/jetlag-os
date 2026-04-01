@@ -1,0 +1,12 @@
+{
+  "name": "jetlag-os",
+  "version": "1.0.0",
+  "description": "Netlify Functions Projekt",
+  "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}
