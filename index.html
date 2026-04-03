@@ -14,9 +14,9 @@
       <h1>JetLag: The Game | H+S Osnabrück</h1>
     </div>
     <div id="form" class="standard">
-      <form>
-        <input type="text" name="name" placeholder="Name...">
-        <input type="text" name="daten" id="mehrereDaten" name="daten" placeholder="Daten auswählen...">
+      <form id="bestellForm">
+        <input type="text" name="name" placeholder="Name..." required>
+        <input type="text" name="daten" id="mehrereDaten" name="daten" placeholder="Daten auswählen..." required>
         <input type="submit">
       </form>
     </div>
@@ -53,5 +53,31 @@
     mode: "multiple",   // mehrere Daten erlauben
     dateFormat: "Y-m-d",
     maxDate: "2026-12-31"
+  });
+  document.getElementById("bestellForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const body = {
+      name: this.name.value.trim(),
+      daten: this.daten.value.trim()
+    };
+
+    try {
+      const res = await fetch("/.netlify/functions/neueBestellung", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(body)
+      });
+
+      const antwort = await res.text();
+      document.getElementById("status").textContent =
+        res.ok ? `Gespeichert: ${antwort}` : `Fehler: ${antwort}`;
+    } catch (err) {
+      document.getElementById("status").textContent = "Fehler beim Senden: " + err;
+    }
+
+    this.reset();
   });
 </script>
